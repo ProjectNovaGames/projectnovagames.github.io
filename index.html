@@ -566,25 +566,38 @@
   <div class="band-dark">
     <section>
       <h2 class="section-title">Projects</h2>
-      <div style="display:flex; flex-direction:column; align-items:center; gap:24px;">
-        <a href="https://store.steampowered.com/app/1865260/Petrified/" target="_blank" style="display:block;">
-          <img
-            src="img/petrified_title_nobg.webp"
-            alt="Petrified"
-            style="width:min(420px,80vw); filter:drop-shadow(0 0 30px rgba(59,130,246,0.3)); transition:filter 0.2s, transform 0.2s;"
-            onmouseover="this.style.filter='drop-shadow(0 0 50px rgba(59,130,246,0.6))';this.style.transform='scale(1.03)'"
-            onmouseout="this.style.filter='drop-shadow(0 0 30px rgba(59,130,246,0.3))';this.style.transform='scale(1)'"
-          />
-        </a>
-        <a href="https://store.steampowered.com/app/1865260/Petrified/" target="_blank" style="display:block;">
-          <img
-            src="img/available_on_steam.webp"
-            alt="Available on Steam"
-            style="height:56px; object-fit:contain; filter:drop-shadow(0 4px 12px rgba(0,0,0,0.5)); transition:transform 0.2s, filter 0.2s;"
-            onmouseover="this.style.transform='scale(1.06)';this.style.filter='drop-shadow(0 4px 24px rgba(102,192,244,0.5))'"
-            onmouseout="this.style.transform='scale(1)';this.style.filter='drop-shadow(0 4px 12px rgba(0,0,0,0.5))'"
-          />
-        </a>
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:48px;">
+
+        <!-- Petrified -->
+        <div style="display:flex; flex-direction:column; align-items:center; gap:20px;">
+          <a href="https://store.steampowered.com/app/1865260/Petrified/" target="_blank" style="display:block;">
+            <img
+              src="img/petrified_title_nobg.webp"
+              alt="Petrified"
+              style="width:min(340px,80vw); filter:drop-shadow(0 0 30px rgba(59,130,246,0.3)); transition:filter 0.2s, transform 0.2s;"
+              onmouseover="this.style.filter='drop-shadow(0 0 50px rgba(59,130,246,0.6))';this.style.transform='scale(1.03)'"
+              onmouseout="this.style.filter='drop-shadow(0 0 30px rgba(59,130,246,0.3))';this.style.transform='scale(1)'"
+            />
+          </a>
+          <a href="https://store.steampowered.com/app/1865260/Petrified/" target="_blank" style="display:block;">
+            <img
+              src="img/available_on_steam.webp"
+              alt="Available on Steam"
+              style="height:48px; object-fit:contain; filter:drop-shadow(0 4px 12px rgba(0,0,0,0.5)); transition:transform 0.2s, filter 0.2s;"
+              onmouseover="this.style.transform='scale(1.06)';this.style.filter='drop-shadow(0 4px 24px rgba(102,192,244,0.5))'"
+              onmouseout="this.style.transform='scale(1)';this.style.filter='drop-shadow(0 4px 12px rgba(0,0,0,0.5))'"
+            />
+          </a>
+        </div>
+
+        <!-- To Be Announced -->
+        <div style="display:flex; flex-direction:column; align-items:center; gap:20px;">
+          <div style="width:min(340px,80vw); aspect-ratio:16/9; background:var(--surface); border:1px solid var(--border); border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; filter:drop-shadow(0 0 30px rgba(59,130,246,0.15));">
+            <span style="font-size:clamp(4rem,12vw,7rem); line-height:1; color:var(--accent); opacity:0.4; font-family:'Orbitron',sans-serif;">?</span>
+          </div>
+          <span style="font-family:'Orbitron',sans-serif; font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">To Be Announced</span>
+        </div>
+
       </div>
     </section>
   </div>
@@ -634,7 +647,7 @@
       <h2>Contact Us.</h2>
       <p>Whether it's a bug report or you just want to say hello, we'd love to hear from you!</p>
       <div class="contact-btns">
-        <a class="btn-email" href="mailto:contactus@projectnovagames.com?subject=Contact%20Us%20-%20Website">Email Us</a>
+        <a class="btn-email" href="/cdn-cgi/l/email-protection#c9aaa6a7bda8aabdbcba89b9bba6a3acaabda7a6bfa8aea8a4acbae7aaa6a4f6babcaba3acaabdf48aa6a7bda8aabdecfbf99cbaecfbf9e4ecfbf99eacabbaa0bdac">Email Us</a>
         <a class="btn-discord" href="https://discord.gg/85Ru5c46dM" target="_blank">Join our Discord</a>
       </div>
     </div>
@@ -708,7 +721,7 @@
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Dust motes
     const wrap = document.getElementById('dustWrap');
     for (let i = 0; i < 40; i++) {
