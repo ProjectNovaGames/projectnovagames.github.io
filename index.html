@@ -42,6 +42,13 @@
       background: rgba(10,12,16,0.85);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
+      transform: translateY(-100%);
+      opacity: 0;
+      transition: transform 0.35s ease, opacity 0.35s ease;
+    }
+    nav.nav-visible {
+      transform: translateY(0);
+      opacity: 1;
     }
 
     .nav-logo img {
@@ -984,6 +991,16 @@
       requestAnimationFrame(draw);
     }
     draw();
+
+    // Show nav after user scrolls
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        nav.classList.add('nav-visible');
+      } else {
+        nav.classList.remove('nav-visible');
+      }
+    }, { passive: true });
   </script>
 </body>
 </html>
